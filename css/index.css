@@ -1,0 +1,35 @@
+p {
+    color: aqua;
+}
+p#sub-title2{
+    color: pink;
+}
+
+.company{
+    font-weight: bold;
+}
+
+
+h1 {
+    font-size: 50pt;
+}
+div.box1{
+    height: 100px;
+    width: 100px;
+    background-color: royalblue;
+    text-align: center;
+    border-radius: 10px;
+
+}
+div.box2{
+    height: 100px;
+    width: 100px;
+    background-color: mediumturquoise;
+    text-align: center;
+}
+div.box3{
+    height: 100px;
+    width: 100px;
+    background-color: midnightblue;
+    text-align: center;
+}

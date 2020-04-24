@@ -1,0 +1,52 @@
+<!Doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>関数とクラス</title>
+</head>
+<body>
+  <script>
+    'use strict';
+
+    // const addTwoNum = (x,y) => {
+    //   return x + y;
+    // };
+    // console.log(addTwoNum(3 ,4));
+
+//   class Cluculator {
+//     constructor(x ,y) {
+//       this.x = x;
+//       this.y = y;
+//     }
+//     addTwoNum() {
+//       return this.x + this.y;
+//     }
+//   }
+
+//   const CalkA = new Cluculator(3,4); //インスタンス生成
+//   const CalkB = new Cluculator(1,1); //インスタンス生成
+//   console.log(CalkA.addTwoNum());
+//   console.log(CalkB.addTwoNum());
+
+  class SuperNaming {
+    constructor() {
+      this.name = "田中";
+    }
+    outputName() {
+      return this.name;
+    }
+  }
+  class SubGreeting extends SuperNaming {
+    outputName() {
+      return super.outputName() + "太郎";
+    }
+    outputHello() {
+      return "Hello!!";    
+    }
+  }
+  const Greeting = new SubGreeting;
+  console.log(Greeting.outputHello() + Greeting.outputName());
+  </script>  
+</body>
+</html>

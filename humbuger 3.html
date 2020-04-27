@@ -88,6 +88,9 @@ transition: .4s;
     <p>Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!</p>
     <p>Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!</p>
     <p>Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!</p>
+    <p>Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!</p>
+    <p>Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!</p>
+    <p>Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!Hello!!</p>
 </div>
 <div id="cover"></div>
 <script>
@@ -96,21 +99,29 @@ transition: .4s;
   // const open = document.getElementById('open');
   // const close = document.getElementById('close');
   
-  const close = document.getElementById('close');
-  const close = document.getElementById('close');
+  // const open = document.getElementById('open');
+  // const close = document.getElementById('close');
 
   const menu = document.getElementById('menu');
   const cover = document.getElementById('cover');
 
-  open.addEventListener('click', () => {
+  menu.addEventListener('mouseover', () => {
       menu.className = 'menu-open';
       cover.className = 'menu-open';
   });
-
-  close.addEventListener('click', () => {
-    menu.className = '';
-    cover.className = '';
+  menu.addEventListener('mouseleave', () => {
+      menu.className = '';
+      cover.className = '';
   });
+
+  // open.addEventListener('click', () => {
+  //     menu.className = 'menu-open';
+  //     cover.className = 'menu-open';
+  // });
+  // close.addEventListener('click', () => {
+  //   menu.className = '';
+  //   cover.className = '';
+  // });
 
 </script>
 </body>
